@@ -17,5 +17,7 @@
 ```npx serve out```
 
 Your static site will be available at the mentioned port in terminal.
-
+<br>
+Generated page can be opened by visiting ```http://localhost:{port_number}/posts/{md-filename}```
+<br>
 Exported html files can be found in ```/posts/{md-filename}.html```
