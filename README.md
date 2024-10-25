@@ -17,4 +17,5 @@
 ```npx serve out```
 
 Your static site will be available at the mentioned port in terminal.
+
 Exported html files can be found in ```/posts/{md-filename}.html```
