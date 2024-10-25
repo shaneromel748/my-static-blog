@@ -3,7 +3,7 @@
 ## Setup
 
 1. Clone the repository:
-```git clone <repo-url> cd my-static-blog```
+```git clone https://github.com/shaneromel748/my-static-blog cd my-static-blog```
 
 2. Install dependencies:
 ```npm install```
@@ -17,3 +17,4 @@
 ```npx serve out```
 
 Your static site will be available at the mentioned port in terminal.
+Exported html files can be found in ```/posts/{md-filename}.html```

@@ -17,19 +17,28 @@ export const getStaticProps: GetStaticProps = async () => {
 
 export default function Home({ allPostsData }: HomeProps) {
   return (
-    <section>
-      <h1>Blog</h1>
-      <ul>
-        {allPostsData.map(({ id, title, date }) => (
-          <li key={id}>
-            <Link href={`/posts/${id}`}>
-              {title}
-            </Link>
-            <br />
-            <small>{date}</small>
-          </li>
-        ))}
-      </ul>
-    </section>
+    <div className="container">
+      <h1 className="title">Blog Posts</h1>
+      <table className="blog-table">
+        <thead>
+          <tr>
+            <th className="table-header">Title</th>
+            <th className="table-header">Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          {allPostsData.map(({ id, date, title }) => (
+            <tr key={id}>
+              <td className="table-cell">
+                <Link className="link" href={`/posts/${id}`}>
+                  {title}
+                </Link>
+              </td>
+              <td className="table-cell">{date}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   )
 }
